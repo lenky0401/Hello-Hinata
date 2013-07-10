@@ -35,7 +35,6 @@ bool MainApplication::setup()
     view->setWindowOpacity(10);
 
     QObject::connect(view->engine(), SIGNAL(quit()), qApp, SLOT(quit()));
-    view->rootContext()->setContextProperty("WindowControl",view);
 
     QDesktopWidget* desktop = QApplication::desktop();
     QSize size = view->sizeHint();
